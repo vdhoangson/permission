@@ -1,0 +1,31 @@
+{
+    "name": "vdhoangson/permission",
+    "description": "Role & Permission management for PenCMS",
+    "keywords": ["vdhoangson", "role", "permission", "multi", "management", "laravel", "pencms"],
+    "homepage": "https://github.com/vdhoangson/permission",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vdhoangson",
+            "email": "vdhoangson@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "laravel/framework": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "vdhoangson\\Permission\\": "packages/vdhoangson/permission/src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "vdhoangson\\Permission\\VSPermissionServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
