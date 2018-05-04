@@ -16,14 +16,17 @@
     },
     "autoload": {
         "psr-4": {
-            "vdhoangson\\Permission\\": "packages/vdhoangson/permission/src/"
+            "vdhoangson\\Permission\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "vdhoangson\\Permission\\VSPermissionServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "VSPermission": "vdhoangson\\Permission\\VSPermissionFacade"
+            }
         }
     },
     "minimum-stability": "dev",
