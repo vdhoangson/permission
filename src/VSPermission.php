@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 use DB;
 
 class VSPermission {
-    protected $permission;
+    protected $permissions;
     /**
      * Create a new confide instance.
      *
